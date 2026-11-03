@@ -1,0 +1,55 @@
+###
+GET http://127.0.0.1:8000/api/doctor/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/doctor/
+Content-Type: application/json
+
+{
+
+    "name": "Dr. Amal ",
+    "specialization": "Oncology",
+    "experience": 10,
+    "hospital": "Amala",
+    "qualification": "MBBS, MD Cardiology",
+    "consultation_fee": 1800
+}
+
+###
+GET http://127.0.0.1:8000/api/doctor/1/
+Accept: application/json
+
+###
+PUT  http://127.0.0.1:8000/api/doctor/1/
+Content-Type: application/json
+
+{
+
+    "name": "Dr. John Mathew",
+    "specialization": "Cardiology",
+    "experience": 5,
+    "hospital": "City Care Hospital",
+    "qualification": "MBBS, MD Cardiology",
+    "consultation_fee": 1800
+}
+
+###
+DELETE   http://127.0.0.1:8000/api/doctor/2/
+
+###
+GET http://127.0.0.1:8000/api/appointment/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/api/appointment/
+Content-Type: application/json
+
+{
+    "patient_name": "Joy",
+    "phone": "9676564313",
+    "doctor_id": 1,
+    "appointment_date": "2026-11-01",
+    "problem": "headache"
+}
